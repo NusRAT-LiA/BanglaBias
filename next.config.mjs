@@ -11,4 +11,4 @@ const nextConfig = {
   assetPrefix: '/BanglaBias/', // GitHub Pages asset prefix
 };
 
-export default nextConfig;
+module.exports = nextConfig; 
