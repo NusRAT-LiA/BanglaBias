@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { getAssetPath } from "@/lib/basePath"
 
 export function Visuals() {
   return (
@@ -18,7 +19,7 @@ export function Visuals() {
             </div>
             <div className="w-full bg-gradient-to-br from-muted via-background to-muted rounded-lg flex items-center justify-center overflow-hidden">
               <Image
-                src="/CF.png"
+                src={getAssetPath("CF.png")}
                 alt="Confusion Matrix Heatmap showing model classification performance"
                 width={1600}
                 height={900}
@@ -37,7 +38,7 @@ export function Visuals() {
             </div>
             <div className="w-full bg-gradient-to-br from-muted via-background to-muted rounded-lg flex items-center justify-center overflow-hidden">
               <Image
-                src="/Bias-tendency.png"
+                src={getAssetPath("Bias-tendency.png")}
                 alt="Bias Tendency Chart showing prediction distribution across categories"
                 width={1600}
                 height={900}

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Papa from "papaparse"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from "recharts"
 import { DataTable } from "./data-table"
+import { getAssetPath } from "@/lib/basePath"
 
 function useWindowSize() {
   const [windowSize, setWindowSize] = useState({
@@ -72,8 +73,8 @@ export function Leaderboard() {
   useEffect(() => {
     const loadCSV = async () => {
       try {
-        // Replace this with your actual CSV URL
-        const csvUrl = "/leaderboard.csv"
+        // Use basePath-aware asset path for GitHub Pages
+        const csvUrl = getAssetPath("leaderboard.csv")
 
         const response = await fetch(csvUrl)
         const csvText = await response.text()
