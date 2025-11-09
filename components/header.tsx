@@ -28,9 +28,14 @@ export function Header() {
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-light max-w-2xl">
           Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles
           </p>
-          <p className="text-sm sm:text-base text-muted-foreground/80 font-medium">
-            Accepted to BLP at AACL 2025
-          </p>
+          <a 
+            href="https://www.aclweb.org/portal/content/aacl-2025" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-4 py-2 text-sm sm:text-base font-semibold text-primary-foreground bg-gradient-to-r from-accent to-primary hover:from-accent/90 hover:to-primary/90 rounded-lg transition-all shadow-md hover:shadow-lg transform hover:scale-105"
+          >
+            Accepted to BLP at AACL 2025!
+          </a>
 
           <div className="flex flex-wrap gap-2 sm:gap-3 pt-2">
             {authors.map((author, idx) => (
