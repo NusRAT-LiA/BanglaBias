@@ -27,7 +27,9 @@ export function Header() {
           </div>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground font-light max-w-2xl">
           Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles
-
+          </p>
+          <p className="text-sm sm:text-base text-muted-foreground/80 font-medium">
+            Accepted to BLP at AACL 2025
           </p>
 
           <div className="flex flex-wrap gap-2 sm:gap-3 pt-2">
@@ -44,6 +46,25 @@ export function Header() {
                 {idx < authors.length - 1 && <span className="text-muted-foreground"> • </span>}
               </span>
             ))}
+          </div>
+
+          <div className="flex flex-wrap gap-3 sm:gap-4 pt-4">
+            <a 
+              href="https://arxiv.org/abs/2510.03898" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-4 py-2 text-sm sm:text-base font-medium text-primary-foreground bg-primary hover:bg-primary/90 rounded-md transition-colors shadow-sm hover:shadow-md"
+            >
+              Paper
+            </a>
+            <a 
+              href="https://github.com/NusRAT-LiA/Bangla-Article-Stance-Detection-Benchmark-Dataset" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-4 py-2 text-sm sm:text-base font-medium text-primary-foreground bg-primary hover:bg-primary/90 rounded-md transition-colors shadow-sm hover:shadow-md"
+            >
+              Dataset
+            </a>
           </div>
         </div>
       </div>
