@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const basePath = '/BanglaBias';
+
 const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
@@ -7,8 +9,11 @@ const nextConfig = {
   images: {
     unoptimized: true, // Required for static export with next/image
   },
-  basePath: '/BanglaBias', // GitHub Pages base path
-  assetPrefix: '/BanglaBias/', // GitHub Pages asset prefix
+  basePath: basePath, // GitHub Pages base path
+  assetPrefix: basePath, // GitHub Pages asset prefix
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
-module.exports = nextConfig; 
+export default nextConfig;

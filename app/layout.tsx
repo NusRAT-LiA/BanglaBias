@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { getAssetPath } from '@/lib/basePath'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   title: 'BanglaBias - A Benchmark for Uncovering Political Bias in Bangla News Articles',
   description: 'Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles',
   icons: {
-    icon: '/placeholder-logo.png',
+    icon: getAssetPath('placeholder-logo.png'),
   },
 }
 
