@@ -29,7 +29,7 @@ export function Header() {
           Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles
           </p>
           <a 
-            href="https://www.aclweb.org/portal/content/aacl-2025" 
+            href="https://openreview.net/forum?id=jpm9qJNlFl&referrer=%5Bthe%20profile%20of%20Nusrat%20Jahan%20Lia%5D(%2Fprofile%3Fid%3D~Nusrat_Jahan_Lia1)" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-4 py-2 text-sm sm:text-base font-semibold text-primary-foreground bg-gradient-to-r from-accent to-primary hover:from-accent/90 hover:to-primary/90 rounded-lg transition-all shadow-md hover:shadow-lg transform hover:scale-105"
