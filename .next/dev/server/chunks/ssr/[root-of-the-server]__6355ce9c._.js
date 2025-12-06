@@ -58,17 +58,23 @@ const __TURBOPACK__default__export__ = fontData;
 
 // Get the base path from Next.js config
 // This works for both static export and regular builds
+// In dev mode, this will be empty string; in production, it will be '/BanglaBias'
 __turbopack_context__.s([
     "basePath",
     ()=>basePath,
     "getAssetPath",
     ()=>getAssetPath
 ]);
-const basePath = ("TURBOPACK compile-time value", "/BanglaBias") || '/BanglaBias';
+const basePath = ("TURBOPACK compile-time truthy", 1) ? ("TURBOPACK compile-time value", "") : "TURBOPACK unreachable";
 function getAssetPath(path) {
     // Remove leading slash if present, then add basePath
     const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-    return `${basePath}/${cleanPath}`;
+    // If basePath is empty (dev mode), just return the clean path
+    if ("TURBOPACK compile-time truthy", 1) {
+        return `/${cleanPath}`;
+    }
+    //TURBOPACK unreachable
+    ;
 }
 }),
 "[project]/app/layout.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
